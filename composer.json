@@ -1,13 +1,22 @@
 {
     "$schema": "https://getcomposer.org/schema.json",
-    "name": "laravel/react-starter-kit",
+    "name": "arthurydalgo/laravext-vue-starter-kit",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "version": "1.0.0",
+    "homepage": "https://github.com/arthurydalgo/laravext-vue-starter-kit",
+    "description": "The skeleton application for Laravel framework with Laravext.",
     "keywords": [
         "laravel",
         "framework"
     ],
     "license": "MIT",
+    "authors": [
+        {
+            "name": "Arthur Ydalgo",
+            "email": "arthur.ydalgo.dev@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "require": {
         "php": "^8.2",
         "arthurydalgo/laravext": "^1.1",
