@@ -1,4 +1,4 @@
-# Laravext Example - Laravel 11 with Vue
+# Laravext Example - Laravel 12 with Vue
 
 ## Introduction
 
