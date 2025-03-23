@@ -2,14 +2,9 @@
 
 namespace App\Http\Middleware;
 
-use App\Models\AbuseReport;
-use App\Models\Reaction;
-use Closure;
 use Illuminate\Foundation\Inspiring;
 use Illuminate\Http\Request;
 use Laravext\Middleware;
-use Illuminate\Support\Facades\View;
-use Symfony\Component\HttpFoundation\Response;
 use Tighten\Ziggy\Ziggy;
 
 class HandleLaravextRequests extends Middleware

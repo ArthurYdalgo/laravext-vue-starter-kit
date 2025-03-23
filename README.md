@@ -1,8 +1,8 @@
-# Laravext Example - Laravel 11 with React
+# Laravext Example - Laravel 11 with Vue
 
 ## Introduction
 
-This is an starter kit of a Laravel 12 application with React that makes use of the [Laravext package](laravext.dev).
+This is an starter kit of a Laravel 12 application with Vue that makes use of the [Laravext package](https://laravext.dev).
 
 ## Instructions
 
