@@ -2,7 +2,7 @@
     "$schema": "https://getcomposer.org/schema.json",
     "name": "arthurydalgo/laravext-vue-starter-kit",
     "type": "project",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "homepage": "https://github.com/arthurydalgo/laravext-vue-starter-kit",
     "description": "The skeleton application for Laravel framework with Laravext.",
     "keywords": [
