@@ -32,7 +32,7 @@ return Application::configure(basePath: dirname(__DIR__))
          * By default, CSRF is enabled for api routes. Uncomment the following
          * lines to disable CSRF protection for specific URIs.
          * 
-         * @source https://laravel.com/docs/12.x/csrf#csrf-excluding-uris
+         * @source https://laravel.com/docs/13.x/csrf#csrf-excluding-uris
          */
         // $middleware->validateCsrfTokens(except: [
         //     'api/*'

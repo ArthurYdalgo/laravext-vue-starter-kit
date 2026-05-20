@@ -1,8 +1,8 @@
-# Laravext Example - Laravel 12 with Vue
+# Laravext Example - Laravel 13 with Vue
 
 ## Introduction
 
-This is an starter kit of a Laravel 12 application with Vue that makes use of the [Laravext package](https://laravext.dev).
+This is an starter kit of a Laravel 13 application with Vue that makes use of the [Laravext package](https://laravext.dev).
 
 I tried to keep as similar as the one officially offered by the Laravel team, so the starter kit isn't making use of the `layout.vue` file convention.
 
