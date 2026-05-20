@@ -8,7 +8,7 @@ I tried to keep as similar as the one officially offered by the Laravel team, so
 
 ## Instructions
 
-I'm assuming you have PHP (8.4 or later), Composer and Node.js installed on your machine, and also that you have some kind of database running (like MySQL or SQLite), that you have created a `.env` file based on the `.env.example` file and set it up with your database credentials.
+I'm assuming you have PHP (8.3 or later), Composer and Node.js installed on your machine, and also that you have some kind of database running (like MySQL or SQLite), that you have created a `.env` file based on the `.env.example` file and set it up with your database credentials.
 
 ```bash
 npm install
