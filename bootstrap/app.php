@@ -21,8 +21,6 @@ return Application::configure(basePath: dirname(__DIR__))
             AddLinkHeadersForPreloadedAssets::class,
         ]);
 
-        $middleware->statefulApi();
-
         $middleware->api(append: [
             EncryptCookies::class,
             StartSession::class,
@@ -34,9 +32,9 @@ return Application::configure(basePath: dirname(__DIR__))
          * 
          * @source https://laravel.com/docs/13.x/csrf#csrf-excluding-uris
          */
-        // $middleware->validateCsrfTokens(except: [
-        //     'api/*'
-        // ]);
+        $middleware->validateCsrfTokens(except: [
+            'api/*'
+        ]);
     })
     ->withExceptions(function (Exceptions $exceptions) {
         //
