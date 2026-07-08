@@ -55,9 +55,16 @@ return [
     'strand_id_length' => 64,
 
     /**
+     * The class responsible for building the Nexus page response (props, shared props, SSR, etc).
+     * Extend \Laravext\ResponseFactory to customize how responses are built and rendered
+     * (e.g. overriding withUrlIntended()).
+     */
+    'response_factory' => \Laravext\ResponseFactory::class,
+
+    /**
      * By default, these are the file extensions that will be used to search for the nexus files. Change it to your liking.
      */
-    'file_extensions' => ['js', 'ts', 'vue'],
+    'file_extensions' => ['jsx', 'tsx', 'js', 'ts', 'vue'],
 
     /**
      * The router automatically generates a version based on the build files or the assets' url, but in case you want to
@@ -74,6 +81,44 @@ return [
      * This is only affected if you're using the visit helper in the client.
      */
     'force_page_visit' => env('LARAVEXT_FORCE_PAGE_VISIT', false),
+
+    'localization' => [
+        /**
+         * Whether or not the localized routing feature is enabled.
+         */
+        'enabled' => false,
+
+        /**
+         * The available locales for the application. By default, it will attempt to use the 
+         * APP_LOCALES environment variable, falling back to English.
+         */
+        'locales' => env('APP_LOCALES') ? explode(',', env('APP_LOCALES')) : config('app.locales', ['en']),
+
+        /**
+         * The base or default locale of the application. This is used to determine the primary 
+         * routes and fallback behaviors.
+         */
+        'default_locale' => env('APP_LOCALE', 'en'),
+
+        /**
+         * Whether or not a language prefix should be added to the URI for localized routes 
+         * (e.g., generating /en/users instead of just /users).
+         */
+        'add_prefix_to_uri' => true,
+
+        /**
+         * The name of the translation file group located in your lang directory that will 
+         * be used to translate the URI segments.
+         */
+        'translation_file' => 'routes',
+
+        /**
+         * The single class responsible for all localized routing behavior. 
+         * Extend \Laravext\Localization\RouteLocalizer to completely customize how localized route names
+         * are generated.
+         */
+        'route_localizer' => \Laravext\Localization\RouteLocalizer::class,
+    ],
 
     /**
      * This config is used to determine if the server should render the javascript or not.
