@@ -4,6 +4,13 @@ import { serve } from '@laravext/vue3/server';
 import { resolveComponent } from '@laravext/vue3/tools';
 import { ZiggyVue } from 'ziggy-js';
 
+// Redefine the global navigator to be writable before the SSR server starts to make it writable.
+Object.defineProperty(global, 'navigator', {
+    value: global.navigator,
+    writable: true,
+    configurable: true
+});
+
 serve(({ window, cookies }: { window: any; cookies: any }) => {
     return createLaravextSsrApp({
         nexusResolver: (name: string) => resolveComponent(`./nexus/${name}`, import.meta.glob('./nexus/**/*')),
